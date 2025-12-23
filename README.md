@@ -65,7 +65,7 @@ Stores booking details.
 - vehicle_id (FK → vehicles)
 - start_date
 - end_date
-- booking_status (ENUM)
+- booking_status (ENUM: pending, confirmed, completed, cancelled)
 - total_cost
 
 ---
@@ -78,9 +78,9 @@ The `queries.sql` file contains all SQL commands and solutions required for this
 
 Creates the database and ENUM types for:
 
-- user roles
-- vehicle types
-- vehicle availability
+- user role
+- vehicle type
+- vehicle status
 - booking status  
   This ensures data integrity and consistency.
 
